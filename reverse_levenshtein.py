@@ -1,7 +1,12 @@
 import requests
 import string
 import re
-
+"""
+This script was for SPbCTF 2021
+It solves the catstep challenge that required the user to guess the flag by using the levenshtein distance from the guess to the correct flag.
+This script solves each character in the string one by one unless there are repeated characters.
+Prints out the progress everytime a new character is confirmed in the flag.
+"""
 alphalist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '"', '£', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '{', '}', '[', ']', '~', '@', ':', ';', "'", '#', '<', '>', '?', ',', '.', '/', '|', '\\', '`']
 payload = {'flag': ''}  # Data
 success_pos = []  # Positions of successfully guessed characters, means we can skip them on successive runs to reduce runtime
