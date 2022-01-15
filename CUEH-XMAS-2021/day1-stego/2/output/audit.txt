@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Dec 26 16:30:28 2021
+Invocation: foremost flag2.png 
+Output directory: /home/jamie/Xmas_CTF/files/day1/2/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: flag2.png
+Start: Sun Dec 26 16:30:28 2021
+Length: 163 KB (167496 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     163 KB 	          0 	  (1920 x 1080)
+Finish: Sun Dec 26 16:30:28 2021
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Dec 26 16:30:28 2021

@@ -1,0 +1,9 @@
+[33;21mprivate argument is not set, the private key will not be displayed, even if recovered.[0m
+[38;21m
+[*] Testing key pubkey.pem.[0m
+[38;21m[*] Performing fibonacci_gcd attack on pubkey.pem.[0m
+[38;21m[*] Performing smallq attack on pubkey.pem.[0m
+[38;21m[*] Performing system_primes_gcd attack on pubkey.pem.[0m
+[38;21m[*] Performing pastctfprimes attack on pubkey.pem.[0m
+[38;21m[*] Performing factordb attack on pubkey.pem.[0m
+[38;21m[*] Attack success with factordb method ![0m

